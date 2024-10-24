@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/icono3.png" type="image/png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Fernando González</div>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#certificates">Certificados</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- sobre mi-->
+    <main>
+        <section id="about">
+            <div class="about-container">
+                <img src="images/Fernando.png" alt="Foto de Fernando" class="profile-photo" height="400" width="400">
+                <div class="intro">
+                    <h2>Fernando González</h2>
+                    <p>Desarrollador/a de Software | Aplicaciones Móviles</p>
+                    <p>Técnico recién graduado en Desarrollo de Software con sólidos conocimientos en programación y administración de datos. Me apasiona el diseño y la creación de aplicaciones, así como el desarrollo de soluciones innovadoras para problemas complejos. Con experiencia en herramientas como Linux, Git, y lenguajes como Java y Python, estoy preparado para enfrentar desafíos en el ámbito tecnológico y contribuir al éxito de proyectos dinámicos. Busco oportunidades donde pueda aplicar mis habilidades técnicas y continuar aprendiendo en un entorno colaborativo.</p>
+                    <ul>
+                        <li>Email: <a href="mailto:fg796041@gmail.com">fg796041@gmail.com</a></li>
+                        <li>Teléfono: +503 76302568</li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/fernando-gonzalez-0b34322bb/b">linkedin.com/in/fernando-gonzalez-0b34322bb</a></li>
+                        <li>GitHub: <a href="https://github.com/Masternitro">github.com/Masternitro</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+<!-- seccion de habilidades-->
+<section id="skills">
+    <h1>Habilidades</h1>
+    <div class="skills-container">
+        <div class="skills-section">
+            <h3>Habilidades Técnicas</h3>
+            <ul class="skills-list">
+                <li>Desarrollo de aplicaciones móviles</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python, Java, PHP</li>
+                <li>SQL, MariaDB</li>
+                <li>Git</li>
+            </ul>
+        </div>
+        <div class="skills-section">
+            <h3>Habilidades Blandas</h3>
+            <ul class="skills-list">
+                <li>Trabajo en equipo</li>
+                <li>Comunicación efectiva</li>
+                <li>Resolución de problemas</li>
+                <li>Adaptabilidad</li>
+                <li>Gestión del tiempo</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de experiencia -->
+<section id="experience">
+    <h1>Experiencia Profesional</h1>
+    <div class="experience-item" >
+        <h3>Desarrollador/a Web | Compañía ABC</h3>
+        <span>Junio 2023 - Presente</span>
+        <p>Desarrollo y mantenimiento de aplicaciones web utilizando HTML, CSS y SQL.</p>
+    </div>
+</section>
+
+<!--seccion para proyectos-->
+<section id="projects">
+    <h1>Proyectos</h1>
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-item active">
+                    <h3>Proyecto 1: Desinfección por Radiación UVC</h3>
+                    <p>Proyecto orientado a la prevención de enfermedades a través del contacto con superficies de constante uso.</p>
+                    <iframe width="350" height="270" src="https://www.youtube.com/embed/u8gQcXB4MFY?si=NGe1lMgQWx2go8F8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="carousel-item">
+                    <h3>Proyecto 2: Aplicación de Gestión de Tareas</h3>
+                    <p>Aplicación móvil para gestionar y organizar tareas diarias.</p>
+                    <iframe width="350" height="270" src="https://www.youtube.com/embed/6fXVVsy5uaU?si=f6Sf7RCeJczf0KSd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="carousel-item">
+                    <h3>Proyecto 3: Sitio Web de Portafolio</h3>
+                    <p>Portafolio digital creado para mostrar mis habilidades y proyectos.</p>
+                    <iframe width="350" height="270" src="https://www.youtube.com/embed/HHREKRQSV-0?si=Lzi8Rrpi5ZesZQHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <button class="carousel-button left" onclick="moveCarousel(-1)">&#10094;</button>
+            <button class="carousel-button right" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
+        <div class="carousel-indicators">
+            <div class="indicator active" onclick="moveToSlide(0)"></div>
+            <div class="indicator" onclick="moveToSlide(1)"></div>
+            <div class="indicator" onclick="moveToSlide(2)"></div>
+        </div>
+</section>
+ 
+<!-- seccion para certificados-->
+<section id="certificates" class="certificates-container">
+    <h1>Certificados</h1>
+    <div class="certificates-grid">
+        <div class="certificate-card" onclick="setModalImage('CERTIFICADO_LINUX_FERNANDO_page-0001.jpg')">
+            <h3>Certificado de Linux</h3>
+            <img src="CERTIFICADO_LINUX_FERNANDO_page-0001.jpg" alt="Certificado de Linux" class="certificado-img">
+        </div>
+        <div class="certificate-card" onclick="setModalImage('CERTIFICADO_GIT & GITHUB_FERNANDO_page-0001.jpg')">
+            <h3>Certificado de Git & GitHub</h3>
+            <img src="CERTIFICADO_GIT & GITHUB_FERNANDO_page-0001.jpg" alt="Certificado de Git & GitHub" class="certificado-img">
+        </div>
+        <div class="certificate-card" onclick="setModalImage('CERTIFICADO_PRINT-3D_FERNANDO_page-0001.jpg')">
+            <h3>Certificado de Impresión 3D</h3>
+            <img src="CERTIFICADO_PRINT-3D_FERNANDO_page-0001.jpg" alt="Certificado de Impresión 3D" class="certificado-img">
+        </div>
+        <div class="certificate-card" onclick="setModalImage('9813426b-a2f4-4dcd-b0e2-ee8b49113c52_certificado_page-0001.jpg')">
+            <h3>Certificado de Citas y Referencias</h3>
+            <img src="9813426b-a2f4-4dcd-b0e2-ee8b49113c52_certificado_page-0001.jpg" alt="Certificado de citas" class="certificado-img">
+        </div>
+        <div class="certificate-card" onclick="setModalImage('html & css.jpg')">
+            <h3>Certificado de HTML & CSS</h3>
+            <img src="html & css.jpg" alt="Certificado de html_css" class="certificado-img">
+        </div>
+        <div class="certificate-card" onclick="setModalImage('produccion_video.jpg')">
+            <h3>Certificado de Producción de Video en Adobe Premiere CC</h3>
+            <img src="produccion_video.jpg" alt="Certificado de adobe" class="certificado-img">
+        </div>
+        <div class="certificate-card" onclick="setModalImage('lightbot.jpg')">
+            <h3>Certificado The Hour of Code</h3>
+            <img src="lightbot.jpg" alt="Certificado de code" class="certificado-img">
+        </div>
+        <div class="certificate-card" onclick="setModalImage('curso_ciudadania.jpg')">
+            <h3>Curso de Ciudadanía</h3>
+            <img src="curso_ciudadania.jpg" alt="Certificado de Ciudadanía" class="certificado-img">
+        </div>
+        <div class="certificate-card" onclick="setModalImage('robotica_arduino.jpg')">
+            <h3>Robótica con Arduino</h3>
+            <img src="robotica_arduino.jpg" alt="Certificado de robotica" class="certificado-img">
+        </div>
+        <div class="certificate-card" onclick="setModalImage('proyecto_uvc.jpg')">
+            <h3>Proyecto UV-C</h3>
+            <img src="proyecto_uvc.jpg" alt="Certificado de uv-c" class="certificado-img">
+        </div>
+        <div class="certificate-card" onclick="setModalImage('proyecto_simont.jpg')">
+            <h3>Proyecto SIMONT</h3>
+            <img src="proyecto_simont.jpg" alt="Certificado de simont" class="certificado-img">
+        </div>
+        <div class="certificate-card" onclick="setModalImage('images/')">
+            <h3>Certificación en proceso...</h3>
+            <img src="images/" alt="" class="certificado-img">
+        </div>
+    </div>
+</section>
+
+<!-- Modal para mostrar la imagen ampliada -->
+<div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+<!--Seccion de formacion -->
+    <section id="formacion" class="formacion-container">
+        <h1>Formación</h1>
+        <div class="formacion-grid">
+            <button class="formacion-btn" onclick="toggleInfo('basica')">Formación Básica</button>
+            <button class="formacion-btn" onclick="toggleInfo('media')">Formación Media</button>
+            <button class="formacion-btn" onclick="toggleInfo('superior')">Educación Superior</button>
+            <button class="formacion-btn" onclick="toggleInfo('complementaria')">Formación Complementaria</button>
+        </div>
+
+        <!-- Secciones de información (ocultas por defecto) -->
+        <div id="basica" class="formacion-info">
+            <h3>Formación Básica</h3>
+            <p>Contenido sobre tu educación básica...</p>
+        </div>
+
+        <div id="media" class="formacion-info">
+            <h3>Formación Media</h3>
+            <p>Contenido sobre tu educación media...</p>
+        </div>
+
+        <div id="superior" class="formacion-info">
+            <h3>Educación Superior</h3>
+            <p>Contenido sobre tu educación superior...</p>
+        </div>
+
+        <div id="complementaria" class="formacion-info">
+            <h3>Formación Complementaria</h3>
+            <p>Contenido sobre tu formación complementaria...</p>
+            <section id="certificates" class="certificates-container">
+                <h3>Reconocimientos</h3>
+                <div class="certificates-grid">
+            <div class="certificate-card" onclick="setModalImage('curso_ciudadania.jpg')">
+                <h3></h3>
+                <img src="curso_ciudadania.jpg" alt="Certificado de honor roll" class="certificado-img">
+            </div>
+            <div class="certificate-card" onclick="setModalImage('p3_2024.jpg')">
+                <h3></h3>
+                <img src="p3_2024.jpg" alt="Certificado de honor roll" class="certificado-img">
+            </div>
+            <div class="certificate-card" onclick="setModalImage('p1_2024.jpg')">
+                <h3></h3>
+                <img src="p1_2024.jpg" alt="Certificado de honor roll" class="certificado-img">
+            </div>
+            <div class="certificate-card" onclick="setModalImage('p4_2023.jpg')">
+                <h3></h3>
+                <img src="p4_2023.jpg" alt="Certificado de honor roll" class="certificado-img">
+            </div>
+            <div class="certificate-card" onclick="setModalImage('p2_2023.jpg')">
+                <h3></h3>
+                <img src="p2_2023.jpg" alt="Certificado de Python" class="certificado-img">
+            </div>
+            <div class="certificate-card" onclick="setModalImage('p1_2023.jpg')">
+                <h3></h3>
+                <img src="p1_2023.jpg" alt="Certificado de Python" class="certificado-img">
+            </div>
+        </div>
+    </div>
+    </section>
+    </section>
+
+
+<!-- seccion para contactarmee-->
+<section id="contact" class="contact-section animate-on-load">
+    <h1>Contacto</h1>
+    <form action="mailto:fg796041@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+        
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo" required>
+        
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" placeholder="Escribe tu mensaje" required></textarea>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
