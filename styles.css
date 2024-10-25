@@ -161,7 +161,7 @@ footer {
     border-radius: 50%;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: float 30s ease-in-out infinite;
+    animation: float 15s ease-in-out infinite;
     margin: 0 auto; /* Centra horizontalmente la imagen */
     display: block; /* Asegura que la imagen se comporte como un bloque */
 }
