@@ -180,7 +180,7 @@ footer {
 }
 
 .intro {
-    max-width: 800px;
+    max-width: 900px;
     text-align: justify;  /* Justifica el texto de la información */
     margin: 0 auto; /* Centra la información en la pantalla */
 }
