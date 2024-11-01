@@ -182,7 +182,7 @@ footer {
 .intro {
     max-width: 900px;
     text-align: justify;  /* Justifica el texto de la información */
-    margin: 0 auto; /* Centra la información en la pantalla */
+    margin: auto; /* Centra la información en la pantalla */
 }
 
 .intro h1 {
@@ -198,7 +198,7 @@ h2 {
 
 .intro p {
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: justify;
 }
 
