@@ -182,7 +182,7 @@ footer {
 .intro {
     max-width: 800px;
     text-align: justify;  /* Justifica el texto de la información */
-    margin: 0 auto; /* Centra la información en la pantalla */
+    margin:auto; /* Centra la información en la pantalla */
 }
 
 .intro h1 {
@@ -310,7 +310,7 @@ h2 {
     padding: 40px 20px;
     background-color: #1e1e1e;
     color: #ddd;
-    text-align: left;
+    text-align: justify;
     border-bottom: 1px solid #555;
 }
 
@@ -352,6 +352,23 @@ h2 {
 .experience-item p {
     font-size: 1.2rem;
     color: #eee;
+    text-align: justify;
+}
+
+.experience-list {
+    list-style-type: disc; /* Establece las viñetas (puntos) */
+    padding-left: 20px; /* Espacio a la izquierda para las viñetas */
+    margin: 0 auto; /* Centra la lista en su contenedor */
+    display: inline-block; /* Hace que la lista se comporte como un bloque en línea */
+}
+
+.experience-list li {
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+    text-align: left; /* Alinea el texto de cada elemento a la izquierda */
+}
+
+.experience-list li::marker {
+    color: white; /* Cambia el color de las viñetas a blanco */
 }
 
 /* Responsividad para pantallas más pequeñas */
