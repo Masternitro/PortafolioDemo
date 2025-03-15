@@ -284,24 +284,26 @@
                 <h3>Diploma</h3>
             <div class="certificates-grid">
                 <div class="certificate-card" onclick="setModalImage('diploma_noveno.jpg')">
-                    <h3></h3>
+                    <h3>Noveno Grado</h3>
                     <img src="diploma_noveno.jpg" alt="Certificado de honor roll" class="certificado-img">
                 </div>
             </div>
         </section>
         </div>
-
         <div id="media" class="formacion-info">
             <h3>Formación Media</h3>
-            <p>Bachillerato Técnico Vocacional en Desarrollo de Software, noviembre de 2024
-            Instituto Nacional de San Miguel Tepezontes
-                San Miguel Tepezontes, La Paz, El Salvador
-                </p>
+            <p>Bachillerato Técnico Vocacional en Desarrollo de Software.</p>
+            <div class="certificates-grid">
+                <div class="certificate-card" onclick="setModalImage('titulo_btv.jpg')">
+                    <h3>Titulo</h3>
+                    <img src="titulo_btv.jpg" alt="Certificado de honor roll" class="certificado-img">
+                </div>
+            </div>
         </div>
 
         <div id="superior" class="formacion-info">
             <h3>Educación Superior</h3>
-            <p>Contenido sobre mi educación superior...</p>
+            <p>Primer Ciclo - Técnico en Ingeniería en Desarrollo de Software.</p>
         </div>
 
         <div id="complementaria" class="formacion-info">
@@ -326,6 +328,10 @@
             <div class="certificate-card" onclick="setModalImage('curso_ciudadania.jpg')">
                 <h3></h3>
                 <img src="curso_ciudadania.jpg" alt="Certificado de honor roll" class="certificado-img">
+            </div>
+            <div class="certificate-card" onclick="setModalImage('p4_2024.jpg')">
+                <h3></h3>
+                <img src="p4_2024.jpg" alt="Certificado de honor roll" class="certificado-img">
             </div>
             <div class="certificate-card" onclick="setModalImage('p3_2024.jpg')">
                 <h3></h3>
@@ -375,3 +381,35 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+<!--
+Mejoras y optimización
+Carga de recursos de forma optimizada:
+
+Mueve los scripts de JavaScript al final del <body> para mejorar la carga inicial del contenido.
+Considera minificar los archivos CSS y JavaScript para reducir el tiempo de carga.
+Estructura semántica:
+
+Usa <section> en lugar de <div class="experience-item"> dentro de #experience, para hacer el código más semántico.
+Agrupa <h1> dentro de un header de cada sección, para una jerarquía clara.
+Uso correcto de atributos en imágenes y iframes:
+
+Evita valores fijos en width y height para mejorar la adaptabilidad en dispositivos móviles.
+Usa loading="lazy" en imágenes para mejorar el rendimiento.
+Usa alt en imágenes y title en iframe para accesibilidad.
+Optimización del menú de navegación:
+
+La barra de navegación tiene un botón para mostrar/ocultar el menú. Si JavaScript está desactivado, el menú no funcionará. Considera usar CSS para el menú responsive.
+Usa aria-label en <nav> y botones para mejorar accesibilidad.
+Separación de estilos y scripts:
+
+Estás llamando a toggleMenu() y setModalImage() directamente en HTML. Es mejor manejar los eventos en un archivo JavaScript separado.
+Corrección en las listas de habilidades:
+
+En la sección "Habilidades Técnicas", la lista tiene "Inglés: Básico A1, Linux" juntos. Separa estos elementos en <li> diferentes.
+SEO y accesibilidad:
+
+Agrega una meta descripción: <meta name="description" content="Portafolio de Fernando González, desarrollador de software y aplicaciones móviles.">
+Usa etiquetas <h2> en secciones en lugar de múltiples <h1>.
+-->
