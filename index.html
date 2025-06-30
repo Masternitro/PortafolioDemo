@@ -1,415 +1,478 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="icono3.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio - Fernando González</title>
+  <link rel="icon" href="icono3.png" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .navbar-toggler {
+      border-color: white; /* borde del botón */
+    }
+  
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Fernando González</div>
-            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#about">Sobre Mí</a></li>
-                <li><a href="#certificates">Certificados</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#experience">Experiencia</a></li>
-                <li><a href="#formacion">Formación</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-<!-- sobre mi-->
-    <main>
-        <section id="about">
-            <div class="about-container">
-                <img src="Fernando.png" alt="Foto de Fernando" class="profile-photo" height="400" width="400" onclick="setModalImage('Fernando.png')">
-                <div class="intro">
-                    <h2>Fernando González</h2>
-                    <p>Tec. Desarrollador de Software | Aplicaciones Móviles</p>
-                    <p>Técnico recién graduado en Desarrollo de Software con sólidos conocimientos en programación y administración de datos. Me apasiona el diseño y la creación de aplicaciones, así como el desarrollo de soluciones innovadoras para problemas complejos. Con experiencia en herramientas como Linux, Git, y lenguajes como Java y Python, estoy preparado para enfrentar desafíos en el ámbito tecnológico y contribuir al éxito de proyectos dinámicos. Busco oportunidades donde pueda aplicar mis habilidades técnicas y continuar aprendiendo en un entorno colaborativo.</p>
-                    <ul>
-                        <li>Email: <a href="mailto:fg796041@gmail.com">fg796041@gmail.com</a></li>
-                        <li>Teléfono: +503 76302568</li>
-                        <li>LinkedIn: <a href="https://www.linkedin.com/in/fernando-gonzalez-0b34322bb/b">Fernando González</a></li>
-                        <li>GitHub: <a href="https://github.com/Masternitro">Masternitro</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-<!-- seccion de habilidades-->
-<section id="skills">
-    <h1>Habilidades</h1>
-    <div class="skills-container">
-        <div class="skills-section">
-            <h3>Habilidades Técnicas</h3>
-            <ul class="skills-list">
-                <li>Inglés: Básico A1, Linux</li>
-                <li>Desarrollo de aplicaciones móviles</li>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Python, Java, PHP</li>
-                <li>SQL, MariaDB</li>
-                <li>Git</li>
-            </ul>
-        </div>
-        <div class="skills-section">
-            <h3>Habilidades Blandas</h3>
-            <ul class="skills-list">
-                <li>Pensamiento crítico y analítico</li>
-                <li>Gestión del tiempo y organización</li>
-                <li>Resolución analítica de problemas</li>
-                <li>Adaptabilidad e innovación práctica</li>
-                <li>Empatía y trabajo en equipo</li>
-                <li>Liderazgo colaborativo</li>
-            </ul>
-        </div>
-    </div>
-</section>
+<body style="font-family: 'Roboto', sans-serif; background-color: #E9D8FC; color: #7600B0;">
 
-<!-- Sección de experiencia -->
-<section id="experience">
-    <h1>Experiencia Profesional</h1>
-    <div class="experience-item" >
-        <h3>Cajero de supermercado | Super Alameda</h3>
-        <span>noviembre 2023 - enero 2024</span>
-            <ul class="experience-list">
-                <li>Cobrar productos a los clientes</li>
-                <li>Empaquetado de productos</li>
-                <li>Atención al cliente</li>
-            </ul>
+  <!-- Sección de inicio -->
+  <section id="inicio" class="d-flex align-items-center min-vh-100" style="background-color: #E9D8FC;">
+    <div class="container text-center">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 mb-4">
+          <img src="img/Fernando.jpg" alt="Fernando González" class="img-fluid rounded-circle shadow" style="width: 200px; height: 200px; object-fit: cover; border: 5px solid #7600B0;" />
+        </div>
+        <div class="col-lg-8">
+          <h1 class="nombre display-4 fw-bold text-uppercase" style="font-family: 'Raleway', sans-serif; color: #1c1c1c;">Fernando González</h1>
+          <h3 class="profesion" style="color: #7600B0; font-family: 'Raleway', sans-serif;">Desarrollador de Software</h3>
+          <p class="lead mt-3" style="color: #1c1c1c;">Transformo ideas en soluciones digitales funcionales y estéticamente atractivas.</p>
+          <div class="mt-4">
+            <a href="#sobremi" class="btn" style="background-color: #7600B0; color: #ffffff; border: none; font-family: 'Raleway', sans-serif;">Ver portafolio</a>
+            <a href="#contacto" class="btn" style="background-color: transparent; color: #1c1c1c; border: 2px solid #1c1c1c; font-family: 'Raleway', sans-serif;">Contactarme</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <h1>Voluntariados</h1>
-    <div class="experience-item">
-        <h3>Tutor de matemáticas | Centro Escolar Cantón San Bartolo</h3>
-        <span>marzo 2023 - septiembre 2023</span>
-            <ul class="experience-list">
-                <li>Acompañamiento en la clase de matemáticas</li>
-                <li>Resolución de ejercicios propuestos por el maestro</li>
-                <li>Realización de pruebas objetivas</li>
-            </ul>
-    </div>
-    <h1>Actividades Extracurriculares</h1>
-<div class="experience-item">
-    <div class="experience-item">
-            <h3>Desarrollador Web | EducaMoney</h3>
-            <span>febrero 2024 - Actualidad</span>
-            <p>Página web orientada a la educación financiera para jóvenes, promoviendo el bienestar económico en El Salvador.</p>
-            <ul class="experience-list">
-                <li>Desarrollo y programación de la plataforma web.</li>
-                <li>Diseño y optimización de la interfaz de usuario (UI).</li>
-                <li>Implementación de contenido educativo accesible y atractivo.</li>
-                <li>Pruebas y optimización del rendimiento de la página web.</li>
-            </ul>
-    </div>
-        
-    <div class="experience-item">
-        <h3>CEO y Desarrollador Web | SIMONT</h3>
-        <span>julio 2024 - Actualidad</span>
-        <p>Sistema para el Monitoreo de Transporte Público en El Salvador, con enfoque en optimización y modernización de pagos.</p>
-        <ul class="experience-list">
-            <li>Liderazgo del equipo de desarrollo.</li>
-            <li>Desarrollo y programación de funcionalidades web.</li>
-            <li>Optimización de la experiencia de usuario.</li>
-            <li>Supervisión de pruebas e integración de sistemas.</li>
+  </section>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top" style="background-color: #1E0034; display: none;">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#inicio" style="color: #ffffff; font-family: 'Raleway', sans-serif;">Fernando González</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: #E9D8FC;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto" style="font-family: 'Raleway', sans-serif;">
+          <li class="nav-item"><a class="nav-link" href="#sobremi" style="color: #ffffff;">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos" style="color: #ffffff;">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formacion" style="color: #ffffff;">Formación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto" style="color: #ffffff;">Contacto</a></li>
         </ul>
+      </div>
     </div>
-    
-    <div class="experience-item" >
-        <h3>Programador en Arduino IDE | Apertura y Cierre de Puertas sin Contacto</h3>
-        <span>julio 2023 - noviembre 2023</span>
-        <p>Desarrollo de sistema de control para apertura y cierre de puertas sin contacto utilizando Arduino IDE y sensores.</p>
-            <ul class="experience-list">
-                <li>Coordinador de equipo.</li>
-                <li>Desarrollo y programación en Arduino IDE.</li>
-                <li>Implementación de sensores y actuadores.</li>
-                <li>Documentación y reporte de resultados.</li>
-            </ul>
-    </div>
+  </nav>
 
-    <div class="experience-item">
-        <h3>Programador en Arduino IDE | Desinfección por Radiación UVC</h3>
-        <span>julio 2022 - octubre 2022</span>
-        <p>Desarrollo de sistema robótico para desinfección de alimentos mediante luz UVC.</p>
-        <ul class="experience-list">
-            <li>Desarrollo y programación en Arduino IDE.</li>
-            <li>Integración de componentes robóticos para control de desinfección.</li>
-            <li>Implementación de sensores de seguridad y control de luz UVC.</li>
-            <li>Pruebas y optimización del sistema.</li>
+  <hr style="border: 2px solid #E9D8FC; margin: 0;">
+
+  <!-- Sección Sobre Mí -->
+  <section id="sobremi" style="height: auto; background-color:#E9D8FC; color:#1c1c1c; font-family: 'Roboto', sans-serif; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 2rem; gap: 2rem;">
+    <div style="flex: 1 1 300px; display: flex; justify-content: center; align-items: center;">
+      <img src="img/Fernando.jpg" alt="Fernando González" style="width: 250px; height: 250px; border-radius: 50%; box-shadow: 0 0 15px rgba(155, 89, 182, 0.6);" />
+    </div>
+    <div style="flex: 2 1 500px; max-width: 600px;">
+      <h2 style="font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 3rem; margin-bottom: 0.2rem; text-transform: uppercase; color:#7600B0;">Fernando González</h2>
+      <h3 style="font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 1.5rem; color: #1c1c1c; margin-bottom: 1rem;">Desarrollador de Software</h3>
+      <p style="font-size: 1.1rem; margin-bottom: 2rem;">Soy un apasionado desarrollador que transforma ideas en soluciones digitales funcionales y estéticamente atractivas.</p>
+      <div style="margin-bottom: 1.5rem;">
+        <h4 style="font-family: 'Raleway', sans-serif; color:#7600B0; margin-bottom: 0.5rem;">
+          <i class="bi bi-code-slash" style="margin-right: 0.5rem;"></i>Habilidades Técnicas
+        </h4>
+      
+        <div style="display: flex; flex-wrap: wrap; gap: 0.7rem;">
+          <!-- 1. HTML -->
+          <span style="background-color:#7600B0; color:white; padding:0.3rem 0.8rem; border-radius:15px; font-weight:600; font-size:0.9rem; display:flex; align-items:center; gap:0.4rem;">
+            <i class="bi bi-file-code-fill"></i> HTML
+          </span>
+      
+          <!-- 2. JavaScript -->
+          <span style="background-color:#7600B0; color:white; padding:0.3rem 0.8rem; border-radius:15px; font-weight:600; font-size:0.9rem; display:flex; align-items:center; gap:0.4rem;">
+            <i class="bi bi-javascript"></i> JavaScript
+          </span>
+      
+          <!-- 3. Python -->
+          <span style="background-color:#7600B0; color:white; padding:0.3rem 0.8rem; border-radius:15px; font-weight:600; font-size:0.9rem; display:flex; align-items:center; gap:0.4rem;">
+            <i class="bi bi-python"></i> Python
+          </span>
+      
+          <!-- 4. 3D -->
+          <span style="background-color:#7600B0; color:white; padding:0.3rem 0.8rem; border-radius:15px; font-weight:600; font-size:0.9rem; display:flex; align-items:center; gap:0.4rem;">
+            <i class="bi bi-cube"></i> 3D
+          </span>
+      
+          <!-- 5. Video -->
+          <span style="background-color:#7600B0; color:white; padding:0.3rem 0.8rem; border-radius:15px; font-weight:600; font-size:0.9rem; display:flex; align-items:center; gap:0.4rem;">
+            <i class="bi bi-camera-video"></i> Video
+          </span>
+      
+          <!-- 7. Design -->
+          <span style="background-color:#7600B0; color:white; padding:0.3rem 0.8rem; border-radius:15px; font-weight:600; font-size:0.9rem; display:flex; align-items:center; gap:0.4rem;">
+            <i class="bi bi-palette"></i> Design
+          </span>
+      
+          <!-- 8. Git -->
+          <span style="background-color:#7600B0; color:white; padding:0.3rem 0.8rem; border-radius:15px; font-weight:600; font-size:0.9rem; display:flex; align-items:center; gap:0.4rem;">
+            <i class="bi bi-git"></i> Git
+          </span>
+
+          <!-- 9. MariaDB / SQL -->
+          <span style="background-color:#7600B0; color:white; padding:0.3rem 0.8rem; border-radius:15px; font-weight:600; font-size:0.9rem; display:flex; align-items:center; gap:0.4rem;">
+            <i class="bi bi-database"></i> SQL
+          </span>
+
+          <!-- 10. Linux -->
+          <span style="background-color:#7600B0; color:white; padding:0.3rem 0.8rem; border-radius:15px; font-weight:600; font-size:0.9rem; display:flex; align-items:center; gap:0.4rem;">
+            <i class="bi bi-terminal"></i> Linux
+          </span>
+
+        </div>
+      </div>
+      
+      <div style="margin-bottom: 1.5rem;">
+        <h4 style="font-family: 'Raleway', sans-serif; color:#7600B0; margin-bottom: 0.5rem;"><i class="bi bi-people-fill" style="margin-right: 0.5rem;"></i>Habilidades Blandas</h4>
+        <ul style="list-style: none; padding: 0; font-size: 1rem; line-height: 1.6; color: #1c1c1c;">
+          <li>✔ Adaptabilidad práctica</li>
+          <li>✔ Trabajo en equipo</li>
+          <li>✔ Pensamiento crítico</li>
+          <li>✔ Aprendizaje rápido</li>
         </ul>
-    </div>   
-</div> 
-</section>
-
-<!--seccion para proyectos-->
-<section id="projects">
-    <h1>Proyectos</h1>
-        <div class="carousel">
-            <div class="carousel-container">
-                <div class="carousel-item">
-                    <h3>Proyecto 4: SIMONT</h3>
-                    <p>Sistema para el monitoreo del transporte público a través de un sito web colaborativo entre la comunidad usuario del transporte público.</p>
-                    <iframe width="350" height="270" src="https://www.youtube.com/embed/HHREKRQSV-0?si=Lzi8Rrpi5ZesZQHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <div class="carousel-item">
-                    <h3>Proyecto 3: EDUCAMONEY</h3>
-                    <p>Educacion financiera para jóvenes, tips, herramientas, calculadoras y organizadores de salario para una gestion de nuestro dinero más profesional.</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FOdw1t35KNk?si=KUWPCozxnHjtmoLK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="carousel-item">
-                    <h3>Proyecto 2: Apertura y cierre de puertas sin contacto</h3>
-                    <p>Proyecto orientado a la prevención de enfermedades a través del contacto con superficies de constante uso.</p>
-                    <iframe width="350" height="270" src="https://www.youtube.com/embed/6fXVVsy5uaU?si=f6Sf7RCeJczf0KSd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <div class="carousel-item active">
-                    <h3>Proyecto 1: Desinfección por Radiación UVC</h3>
-                    <p>Proyecto orientado a la medicina, logrando por medio de una luz UV tipo C una limpieza de frutas, verduras y otros alimentos</p>
-                    <iframe width="350" height="270" src="https://www.youtube.com/embed/u8gQcXB4MFY?si=NGe1lMgQWx2go8F8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-            </div>
-            <button class="carousel-button left" onclick="moveCarousel(-1)">&#10094;</button>
-            <button class="carousel-button right" onclick="moveCarousel(1)">&#10095;</button>
+      </div>
+      <div style="margin-bottom: 2rem;">
+        <h4 style="font-family: 'Raleway', sans-serif; color:#7600B0; margin-bottom: 0.5rem;"><i class="bi bi-globe2" style="margin-right: 0.5rem;"></i>Nivel de Inglés</h4>
+        <div style="width: 100%; background: #eee; border-radius: 10px; overflow: hidden; max-width: 300px;">
+          <div style="width: 50%; background-color:#7600B0; height: 18px;"></div>
         </div>
-        <div class="carousel-indicators">
-            <div class="indicator active" onclick="moveToSlide(0)"></div>
-            <div class="indicator" onclick="moveToSlide(1)"></div>
-            <div class="indicator" onclick="moveToSlide(2)"></div>
-            <div class="indicator" onclick="moveToSlide(3)"></div>
-        </div>
-</section>
- 
-<!-- Sección para certificados -->
-<section id="certificates" class="certificates-container">
-    <h1>Certificados</h1>
-    <div class="certificates-grid">
-        <div class="certificate-card" onclick="setModalImage('images/')">
-            <h3>Certificación en proceso...</h3>
-            <img src="images/" alt="" class="certificado-img">
-        </div>
-        <div class="certificate-card" onclick="setModalImage('CERTIFICADO_PRINT-3D_FERNANDO_page-0001.jpg')">
-            <h3>Certificado de Impresión 3D (28/11/2024)</h3>
-            <img src="CERTIFICADO_PRINT-3D_FERNANDO_page-0001.jpg" alt="Certificado de Impresión 3D" class="certificado-img">
-        </div>
-        <div class="certificate-card" onclick="setModalImage('CERTIFICADO_GIT & GITHUB_FERNANDO_page-0001.jpg')">
-            <h3>Certificado de Git & GitHub (25/11/2024)</h3>
-            <img src="CERTIFICADO_GIT & GITHUB_FERNANDO_page-0001.jpg" alt="Certificado de Git & GitHub" class="certificado-img">
-        </div>
-        <div class="certificate-card" onclick="setModalImage('CERTIFICADO_LINUX_FERNANDO_page-0001.jpg')">
-            <h3>Certificado de Linux (x/11/2024)</h3>
-            <img src="CERTIFICADO_LINUX_FERNANDO_page-0001.jpg" alt="Certificado de Linux" class="certificado-img">
-        </div>
-        <div class="certificate-card" onclick="setModalImage('participacion_bootcamp24.jpg')">
-            <h3>Habilidades para el emprendimiento (14/11/2024)</h3>
-            <img src="participacion_bootcamp24.jpg" alt="Certificado de Linux" class="certificado-img">
-        </div>
-        <div class="certificate-card" onclick="setModalImage('primer_lugar_empre.jpg')">
-            <h3>Primer lugar EducaMoney (09/11/2024)</h3>
-            <img src="primer_lugar_empre.jpg" alt="Certificado de primer lugar EducaMoney" class="certificado-img">
-        </div>
-        <div class="certificate-card" onclick="setModalImage('simont_2lugar_insamt.jpg')">
-            <h3>SIMONT - 2° Lugar ExpoTécnica INSAMT 2024 (14/10/2024)</h3>
-            <img src="simont_2lugar_insamt.jpg" alt="Certificado de Segundo Lugar ExpoTécnica INSAMT 2024" class="certificado-img">
-        </div>
-        <div class="certificate-card" onclick="setModalImage('participacion_talento_matematico.jpg')">
-            <h3>Talento Matemático Fase I (14/10/2024)</h3>
-            <img src="participacion_talento_matematico.jpg" alt="Certificado de Talento Matemático" class="certificado-img">
-        </div>
-        <div class="certificate-card" onclick="setModalImage('proyecto_simont.jpg')">
-            <h3>SIMONT - 5° Lugar Feria CIMAT 2024(06/10/2024)</h3>
-            <img src="proyecto_simont.jpg" alt="Certificado de simont" class="certificado-img">
-        </div>
-        <div class="certificate-card" onclick="setModalImage('curso_ciudadania.jpg')">
-            <h3>Curso de Ciudadanía (08/07/2023)</h3>
-            <img src="curso_ciudadania.jpg" alt="Certificado de Ciudadanía" class="certificado-img">
-        </div>
-        <div class="certificate-card" onclick="setModalImage('9813426b-a2f4-4dcd-b0e2-ee8b49113c52_certificado_page-0001.jpg')">
-            <h3>Certificado de Citas y Referencias (12/05/2023)</h3>
-            <img src="9813426b-a2f4-4dcd-b0e2-ee8b49113c52_certificado_page-0001.jpg" alt="Certificado de citas" class="certificado-img">
-        </div>
-        <div class="certificate-card" onclick="setModalImage('html & css.jpg')">
-            <h3>Certificado de HTML & CSS (13/11/2022)</h3>
-            <img src="html & css.jpg" alt="Certificado de html_css" class="certificado-img">
-        </div>
-        <div class="certificate-card" onclick="setModalImage('robotica_arduino.jpg')">
-            <h3>Robótica con Arduino (x/11/2022)</h3>
-            <img src="robotica_arduino.jpg" alt="Certificado de robotica" class="certificado-img">
-        </div>
-        <div class="certificate-card" onclick="setModalImage('participacion_cimat.jpg')">
-            <h3>Participación en Feria CIMAT 2022 (x/11/2022)</h3>
-            <img src="participacion_cimat.jpg" alt="Certificado de robotica" class="certificado-img">
-        </div>
-        <div class="certificate-card" onclick="setModalImage('proyecto_uvc.jpg')">
-            <h3>Proyecto UV-C (06/10/2022)</h3>
-            <img src="proyecto_uvc.jpg" alt="Certificado de uv-c" class="certificado-img">
-        </div>
-        <div class="certificate-card" onclick="setModalImage('produccion_video.jpg')">
-            <h3>Certificado de Producción de Video en Adobe Premiere CC (03/07/2022)</h3>
-            <img src="produccion_video.jpg" alt="Certificado de adobe" class="certificado-img">
-        </div>
-        <div class="certificate-card" onclick="setModalImage('lightbot.jpg')">
-            <h3>Certificado The Hour of Code (20/05/2022)</h3>
-            <img src="lightbot.jpg" alt="Certificado de code" class="certificado-img">
-        </div>
+        <small style="font-family: 'Roboto', sans-serif; color: #1c1c1c;">Intermedio</small>
+      </div>
+      <a href="#contacto" style="display: inline-block; background-color:#7600B0; color: white; font-family: 'Raleway', sans-serif; font-weight: 700; padding: 0.75rem 1.5rem; border-radius: 30px; text-decoration: none; transition: background-color 0.3s ease;">Contactarme</a>
     </div>
-</section>
+  </section>
 
+  <hr style="border: 2px solid #E9D8FC; margin: 0;">
 
-<!-- Modal para mostrar la imagen ampliada -->
-<div id="modal" class="modal" onclick="closeModal()">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modalImage">
-</div>
+   <!-- Sección de Proyectos -->
+  <section id="proyectos" style="min-height: 100vh; background-color: #f8f9fa; padding: 3rem 1rem;">
+    <h2 class="text-center fw-bold mb-4" style="font-family: 'Raleway', sans-serif; font-size: 2.5rem; color:#7600B0;">Mis Proyectos</h2>
+    <p class="text-center mb-5" style="max-width: 800px; margin: auto; font-size: 1.1rem;" style="color:#1E0034">Estos son algunos de los proyectos que he desarrollado recientemente. Cada uno refleja mi compromiso con la calidad, la funcionalidad y el diseño.</p>
 
-<!--Seccion de formacion -->
-    <section id="formacion" class="formacion-container">
-        <h1>Formación</h1>
-        <div class="formacion-grid">
-            <button class="formacion-btn" onclick="toggleInfo('basica')">Formación Básica</button>
-            <button class="formacion-btn" onclick="toggleInfo('media')">Formación Media</button>
-            <button class="formacion-btn" onclick="toggleInfo('superior')">Educación Superior</button>
-            <button class="formacion-btn" onclick="toggleInfo('complementaria')">Formación Complementaria</button>
+    <div class="d-flex overflow-auto gap-4 px-3">
+      <!-- Cada tarjeta de proyecto -->
+
+      <!-- Proyecto 5 e imagen que esta en proceso aun-->
+      <div class="flex-shrink-0 p-3 border rounded bg-white shadow-sm" style="min-width: 300px; max-width: 300px;">
+        <h5 class="fw-bold mb-2" style="color:#1E0034;">En desarrollo...</h5>
+        <p class="small mb-3">Este proyecto aún está en construcción. Próximamente habrá avances.</p>
+        
+        <div class="mb-3">
+          <div class="ratio ratio-16x9 d-flex align-items-center justify-content-center bg-light rounded">
+            <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID_5" title="YouTube video" allowfullscreen></iframe> -->
+            <i class="bi bi-hourglass-split" style="font-size: 3rem; color: #6c757d;"></i>
+          </div>
         </div>
 
-        <!-- Secciones de información (ocultas por defecto) -->
-        <div id="basica" class="formacion-info">
-            <h3>Formación Básica</h3>
-            <p>Centro Escolar Cantón San Bartolo
-                San Miguel Tepezontes, noviembre 2021
-                </p>
-        <section id="certificates" class="certificates-container">
-                <h3>Diploma</h3>
-            <div class="certificates-grid">
-                <div class="certificate-card" onclick="setModalImage('diploma_noveno.jpg')">
-                    <h3>Noveno Grado</h3>
-                    <img src="diploma_noveno.jpg" alt="Certificado de honor roll" class="certificado-img">
-                </div>
-            </div>
-        </section>
+        <button class="btn btn-outline-primary w-100 mb-2" data-bs-toggle="collapse" data-bs-target="#premios5">Ver reconocimientos</button>
+        <div class="collapse" id="premios5">
+          <div class="d-flex flex-wrap gap-2 mt-2 align-items-center justify-content-center text-muted">
+            <i class="bi bi-folder-x" style="font-size: 2.5rem;"></i>
+            <span>Sin certificados aún</span>
+          </div>
         </div>
-        <div id="media" class="formacion-info">
-            <h3>Formación Media</h3>
-            <p>Bachillerato Técnico Vocacional en Desarrollo de Software.</p>
-            <div class="certificates-grid">
-                <div class="certificate-card" onclick="setModalImage('titulo_btv.jpg')">
-                    <h3>Titulo</h3>
-                    <img src="titulo_btv.jpg" alt="Certificado de honor roll" class="certificado-img">
-                </div>
-            </div>
-        </div>
+      </div>
 
-        <div id="superior" class="formacion-info">
-            <h3>Educación Superior</h3>
-            <p>Ciclo I - Técnico en Ingeniería en Desarrollo de Software.</p>
-        </div>
 
-        <div id="complementaria" class="formacion-info">
-            <h3>Formación Complementaria</h3>
-            <ul>
-                <li>Curso de impresión 3D, Oportunidades de Fundación Gloria Kriete - noviembre 2023</li>
-                <li>Liderazgo ciudadano,  Programa Oportunidades de Fundación Gloria Kriete – mayo 2023</li>
-                <li>Citas y referencias bibliográficas, Capacítate para el empleo, Carlos Slim  – mayo 2023</li>
-                <li>Curso de introducción al desarrollo web: HTML y CSS (1/2), Google Actívate – noviembre, 2022</li>
-                <li>The Hour of Code, CODE, – marzo, 2022</li>
-                <li>Producción de video en Adobe Premiere CC, Instituto Salvadoreño de Formación Profesional – julio, 2022</li>
-                <li>Robótica con Arduino, Instituto Nacional de San Miguel Tepezontes – noviembre 2022</li>
-              </ul>
-              
-            <section id="certificates" class="certificates-container">
-                <h3>Reconocimientos</h3>
-                <div class="certificates-grid">
-            <div class="certificate-card" onclick="setModalImage('primer_lugar_empre.jpg')">
-                <h3></h3>
-                <img src="primer_lugar_empre.jpg" alt="Certificado de honor roll" class="certificado-img">
-            </div>
-            <div class="certificate-card" onclick="setModalImage('curso_ciudadania.jpg')">
-                <h3></h3>
-                <img src="curso_ciudadania.jpg" alt="Certificado de honor roll" class="certificado-img">
-            </div>
-            <div class="certificate-card" onclick="setModalImage('p4_2024.jpg')">
-                <h3></h3>
-                <img src="p4_2024.jpg" alt="Certificado de honor roll" class="certificado-img">
-            </div>
-            <div class="certificate-card" onclick="setModalImage('p3_2024.jpg')">
-                <h3></h3>
-                <img src="p3_2024.jpg" alt="Certificado de honor roll" class="certificado-img">
-            </div>
-            <div class="certificate-card" onclick="setModalImage('p1_2024.jpg')">
-                <h3></h3>
-                <img src="p1_2024.jpg" alt="Certificado de honor roll" class="certificado-img">
-            </div>
-            <div class="certificate-card" onclick="setModalImage('p4_2023.jpg')">
-                <h3></h3>
-                <img src="p4_2023.jpg" alt="Certificado de honor roll" class="certificado-img">
-            </div>
-            <div class="certificate-card" onclick="setModalImage('p2_2023.jpg')">
-                <h3></h3>
-                <img src="p2_2023.jpg" alt="Certificado de Python" class="certificado-img">
-            </div>
-            <div class="certificate-card" onclick="setModalImage('p1_2023.jpg')">
-                <h3></h3>
-                <img src="p1_2023.jpg" alt="Certificado de Python" class="certificado-img">
-            </div>
+      <!-- Proyecto 1 -->
+      <div class="flex-shrink-0 p-3 border rounded bg-white shadow-sm" style="min-width: 300px; max-width: 300px;">
+        <h5 class="fw-bold mb-2" style="color:#1E0034;">SIMONT</h5>
+        <p class="small mb-3">Sistema para el monitoreo del transporte público a través de un sito web colaborativo entre la comunidad usuario del transporte público.</p>
+        <div class="mb-3">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/HHREKRQSV-0" title="YouTube video" allowfullscreen></iframe>
+          </div>
         </div>
+        <button class="btn btn-outline-primary w-100 mb-2" data-bs-toggle="collapse" data-bs-target="#premios1">Ver reconocimientos</button>
+        <div class="collapse" id="premios1">
+          <div class="d-flex flex-wrap gap-2 mt-2">
+            <img src="img/proyecto_simont.jpg" alt="Certificado 1" style="width: 80px; border-radius: 5px;">
+            <img src="img/simont_2lugar_insamt.jpg" alt="Certificado 2" style="width: 80px; border-radius: 5px;">
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="flex-shrink-0 p-3 border rounded bg-white shadow-sm" style="min-width: 300px; max-width: 300px;">
+        <h5 class="fw-bold mb-2" style="color:#1E0034;">EDUCAMONEY</h5>
+        <p class="small mb-3">Educacion financiera para jóvenes, tips, herramientas, calculadoras y organizadores de salario para una gestion de nuestro dinero más profesional</p>
+        <div class="mb-3">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/FOdw1t35KNk" title="YouTube video" allowfullscreen></iframe>
+          </div>
+        </div>
+        <button class="btn btn-outline-primary w-100 mb-2" data-bs-toggle="collapse" data-bs-target="#premios2">Ver reconocimientos</button>
+        <div class="collapse" id="premios2">
+          <div class="d-flex flex-wrap gap-2 mt-2">
+            <img src="img/primer_lugar_empre.jpg" alt="Certificado 3" style="width: 80px; border-radius: 5px;">
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="flex-shrink-0 p-3 border rounded bg-white shadow-sm" style="min-width: 300px; max-width: 300px;">
+        <h5 class="fw-bold mb-2" style="color:#1E0034;">Apertura y cierre de puertas sin contacto</h5>
+        <p class="small mb-3">Proyecto orientado a la prevención de enfermedades a través del contacto con superficies de constante uso.</p>
+        <div class="mb-3">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/6fXVVsy5uaU" title="YouTube video" allowfullscreen></iframe>
+          </div>
+        </div>
+        <button class="btn btn-outline-primary w-100 mb-2" data-bs-toggle="collapse" data-bs-target="#premios3">Ver reconocimientos</button>
+        <div class="collapse" id="premios3">
+          <div class="d-flex flex-wrap gap-2 mt-2 align-items-center justify-content-center" style="min-height: 80px;">
+            <i class="bi bi-folder-x" style="font-size: 3rem; color: #6c757d;"></i>
+            <span class="text-muted ms-2">Sin certificados disponibles</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Proyecto 4 -->
+      <div class="flex-shrink-0 p-3 border rounded bg-white shadow-sm" style="min-width: 300px; max-width: 300px;">
+        <h5 class="fw-bold mb-2" style="color:#1E0034;">Desinfección por Radiación UVC</h5>
+        <p class="small mb-3">Proyecto orientado a la medicina, logrando por medio de una luz UV tipo C una limpieza de frutas, verduras y otros alimentos</p>
+        <div class="mb-3">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/u8gQcXB4MFY" title="YouTube video" allowfullscreen></iframe>
+          </div>
+        </div>
+        <button class="btn btn-outline-primary w-100 mb-2" data-bs-toggle="collapse" data-bs-target="#premios4">Ver reconocimientos</button>
+        <div class="collapse" id="premios4">
+          <div class="d-flex flex-wrap gap-2 mt-2 align-items-center justify-content-center" style="min-height: 80px;">
+            <i class="bi bi-folder-x" style="font-size: 3rem; color: #6c757d;"></i>
+            <span class="text-muted ms-2">Sin certificados disponibles</span>
+          </div>
+        </div>
+      </div>
+
     </div>
-    </section>
-    </section>
+  </section>
+
+  <hr style="border: 2px solid #E9D8FC; margin: 0;">
+
+  <!-- Sección de Formación -->
+  <section id="formacion" style="min-height: 100vh; background-color: #f8f9fa; padding: 3rem 1rem;">
+    <h2 class="text-center fw-bold mb-4" style="font-family: 'Raleway', sans-serif; font-size: 2.5rem; color:#7600B0;">Mi Formación</h2>
+    <p class="text-center mb-5" style="max-width: 800px; margin: auto; font-size: 1.1rem;" style="color: #7600B0;">
+      Aquí encontrarás mi formación académica, cursos realizados y certificados que respaldan mi crecimiento profesional.
+    </p>
+  
+    <!-- Formación Académica -->
+    <div class="mb-5" style="max-width: 700px; margin: auto; color: #1E0034;">
+      <h3 class="fw-semibold mb-3" style="font-family: 'Raleway', sans-serif; color: #1E0034;">Formación Académica</h3>
+      <ul class="list-unstyled fs-5" style="line-height: 1.6;">
+        <li>
+          <strong>Técnico en Ingeniería en Desarrollo de Software</strong><br>
+          <small>ITCA-FEPADE — Ciclo I</small>
+        </li>
+        <li class="mt-3">
+          <strong>Bachillerato Técnico Vocacional en Desarrollo de Software</strong><br>
+          <small>Instituto Nacional de San Miguel Tepezontes — 2024</small>
+        </li>
+      </ul>
+    </div>
+
+  
+    <!-- Cursos y Bootcamps -->
+    <div class="mb-5" style="max-width: 900px; margin: auto;">
+      <h3 class="text-primary fw-semibold mb-4 text-center" style="font-family: 'Raleway', sans-serif;">Cursos y Bootcamps</h3>
+      <div class="row text-center justify-content-center gap-4">
+        <div class="col-12 col-md-5 p-3 border rounded bg-white shadow-sm">
+          <h5 class="text-primary mb-2"><i class="bi bi-award"></i> Habilidades para el Emprendimiento</h5>
+          <p class="mb-0">Think Human Foundation - Aflatoun Internacional - Fundación Gloria de Kriete El Salvador</p>
+        </div>
+        <div class="col-12 col-md-5 p-3 border rounded bg-white shadow-sm">
+            <h5 class="text-primary mb-2"><i class="bi bi-award"></i> Curso de impresión 3D</h5>
+            <p class="mb-0">Oportunidades - Fundación Gloria Kriete</p>
+        </div>
+        <div class="col-12 col-md-5 p-3 border rounded bg-white shadow-sm">
+          <h5 class="text-primary mb-2"><i class="bi bi-award"></i> Liderazgo ciudadano</h5>
+          <p class="mb-0">Oportunidades - Fundación Gloria Kriete</p>
+        </div>
+        <div class="col-12 col-md-5 p-3 border rounded bg-white shadow-sm">
+          <h5 class="text-primary mb-2"><i class="bi bi-award"></i> Citas y referencias bibliográficas</h5>
+          <p class="mb-0">Capacítate para el empleo</p>
+        </div>
+        <div class="col-12 col-md-5 p-3 border rounded bg-white shadow-sm">
+          <h5 class="text-primary mb-2"><i class="bi bi-award"></i> Curso de introducción al desarrollo web: HTML y CSS (1/2)</h5>
+          <p class="mb-0">Google Actívate </p>
+        </div>
+        <div class="col-12 col-md-5 p-3 border rounded bg-white shadow-sm">
+          <h5 class="text-primary mb-2"><i class="bi bi-award"></i> Producción de video en Adobe Premiere CC</h5>
+          <p class="mb-0">INSAFORP</p>
+        </div>
+        <div class="col-12 col-md-5 p-3 border rounded bg-white shadow-sm">
+          <h5 class="text-primary mb-2"><i class="bi bi-award"></i> Robótica con Arduino</h5>
+          <p class="mb-0">Instituto Nacional de San Miguel Tepezontes </p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Certificados -->
+    <div style="max-width: 900px; margin: auto; text-align: center;">
+      <button class="btn btn-outline-secondary mb-3" data-bs-toggle="collapse" data-bs-target="#certificados2">Ver Certificados</button>
+      <div class="collapse" id="certificados2">
+        <div class="d-flex flex-wrap gap-3 justify-content-center">
+          <!-- Cada imagen con data-bs-toggle modal y data-src para cargar en modal -->
+          <img src="CERTIFICADO_PRINT-3D_FERNANDO_page-0001.jpg" alt="Certificado 1" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+               data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="CERTIFICADO_PRINT-3D_FERNANDO_page-0001.jpg" />
+          <img src="CERTIFICADO_GIT & GITHUB_FERNANDO_page-0001.jpg" alt="Certificado 2" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+               data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="CERTIFICADO_GIT & GITHUB_FERNANDO_page-0001.jpg" />
+          <img src="CERTIFICADO_LINUX_FERNANDO_page-0001.jpg" alt="Certificado 3" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+               data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="CERTIFICADO_LINUX_FERNANDO_page-0001.jpg" />
+          <img src="participacion_bootcamp24.jpg" alt="Certificado 4" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+               data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="participacion_bootcamp24.jpg" />
+          <img src="primer_lugar_empre.jpg" alt="Certificado 5" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+               data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="primer_lugar_empre.jpg" />
+          <img src="simont_2lugar_insamt.jpg" alt="Certificado 6" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+               data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="simont_2lugar_insamt.jpg" />
+          <img src="participacion_talento_matematico.jpg" alt="Certificado 7" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+               data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="participacion_matematico.jpg" />
+          <img src="proyecto_simont.jpg" alt="Certificado 8" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+               data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="proyecto_simont.jpg" />
+
+          <img src="curso_ciudadania.jpg" alt="Certificado 9" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+              data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="proyecto_simont.jpg"/>
+
+          <img src="9813426b-a2f4-4dcd-b0e2-ee8b49113c52_certificado_page-0001.jpg" alt="Certificado 9" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+              data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="9813426b-a2f4-4dcd-b0e2-ee8b49113c52_certificado_page-0001.jpg"/>
+
+          <img src="html & css.jpg" alt="Certificado 9" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+              data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="html & css.jpg"/>
+
+          <img src="robotica_arduino.jpg" alt="Certificado 9" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+              data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="robotica_arduino.jpg"/>
+
+          <img src="participacion_cimat.jpg" alt="Certificado 9" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+              data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="participacion_cimat.jpg"/>
+
+          <img src="proyecto_uvc.jpg" alt="Certificado 9" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+              data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="proyecto_uvc.jpg"/>
+
+          <img src="produccion_video.jpg" alt="Certificado 9" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+              data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="produccion_video.jpg"/>
+          
+          <img src="lightbot.jpg" alt="Certificado 9" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+              data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="lightbot.jpg"/>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div style="max-width: 900px; margin: auto; text-align: center;">
+      <button class="btn btn-outline-secondary mb-3" data-bs-toggle="collapse" data-bs-target="#certificados1">Bachillerato y Programa Oportunidades</button>
+      <div class="collapse" id="certificados1">
+        <div class="d-flex flex-wrap gap-3 justify-content-center">
+          <!-- Cada imagen con data-bs-toggle modal y data-src para cargar en modal -->
+
+          <img src="titulo_btv.jpg" alt="Certificado 1" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+              data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="titulo_btv.jpg" />
+
+          <img src="primer_lugar_empre.jpg" alt="Certificado 1" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+               data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="primer_lugar_empre.jpg" />
+
+          <img src="p3_2024.jpg" alt="Certificado 1" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+               data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="p3_2024.jpg" />
+          
+          <img src="p1_2024.jpg" alt="Certificado 1" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+               data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="p1_2024.jpg" />
+          
+          <img src="p4_2023.jpg" alt="Certificado 1" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+               data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="p4_20243.jpg" />
+          
+          <img src="p2_2023.jpg" alt="Certificado 1" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+               data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="p2_20243.jpg" />
+
+          <img src="p1_2023.jpg" alt="Certificado 1" class="img-thumbnail certificado-click" style="width: 120px; cursor: pointer;"
+               data-bs-toggle="modal" data-bs-target="#modalCertificado" data-src="p1_20243.jpg" />
+        </div>
+      </div>
+    </div>
 
 
-<!-- seccion para contactarmee-->
-<section id="contact" class="contact-section animate-on-load">
-    <h1>Contacto</h1>
-    <form action="mailto:fg796041@gmail.com" method="POST" enctype="text/plain" class="contact-form">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-        
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" placeholder="Tu correo" required>
-        
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" placeholder="Escribe tu mensaje" required></textarea>
-        
-        <button type="submit">Enviar</button>
-    </form>
-</section>
+  </section>
+  
+  <!-- Modal para imagen ampliada -->
+  <div class="modal fade" id="modalCertificado" tabindex="-1" aria-labelledby="modalCertificadoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-body p-0">
+          <img src="" id="imagenModal" alt="Certificado grande" class="img-fluid rounded" />
+        </div>
+        <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+    </div>
+  </div>
 
-    </main>
+  <hr style="border: 2px solid #D8B4F3; margin: 0;">
 
-    <script src="script.js"></script>
+  <div class="container my-5">
+    <div class="row justify-content-center g-4">
+  
+      <!-- Medios de Comunicación -->
+      <div class="col-12 col-md-6" id="contacto">
+        <div class="border rounded" style="border-color: #7600B0;">
+          <h4 class="fw-semibold text-center py-3 mb-0" style="border-bottom: 1px solid #7600B0; color:#1E0034">Medios de Comunicación</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="bi bi-telephone-fill me-2"></i>Teléfono: +503 7630-2568</li>
+            <li class="list-group-item"><i class="bi bi-envelope-fill me-2"></i>Correo: <a href="mailto:masternitro@gmail.com">masternitro@gmail.com</a></li>
+            <li class="list-group-item"><i class="bi bi-whatsapp me-2"></i>WhatsApp: +503 7630-2568</li>
+            <li class="list-group-item"><i class="bi bi-facebook me-2"></i>Facebook: /<a href="https://www.facebook.com/share/18wNRT3qz6/?mibextid=wwXIfr">Fernando González</a></li>
+            <li class="list-group-item"><i class="bi bi-instagram me-2"></i>Instagram: <a href="https://www.instagram.com/fxrnxndo5?igsh=cXVtN2I4dm00ZnQ0&utm_source=qr">@Fernando González</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Horario de Atención -->
+      <div class="col-12 col-md-6">
+        <div class="border rounded" style="border-color: #7600B0;">
+          <h4 class="fw-semibold text-center py-3 mb-0" style="border-bottom: 1px solid #6f42c1; color:#1E0034">Horario de Atención</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="bi bi-clock me-2"></i>Lunes a Viernes: 8:00 a.m. – 5:00 p.m.</li>
+            <li class="list-group-item"><i class="bi bi-calendar-week me-2"></i>Sábados: 9:00 a.m. – 12:00 p.m.</li>
+          </ul>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+
+
+    <!-- Sección de Footer -->
+    <footer class="text-white py-4" style="background-color: #1E0034;">
+      <div class="container">
+        <hr class="border-light mb-3">
+        <p class="text-center small mb-0">
+          &copy; <a href="https://masternitro.github.io/Masternitro-Studio/" class="text-white text-decoration-none">2025 Masternitro Studio</a>. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > window.innerHeight - 100) {
+        navbar.style.display = 'block';
+      } else {
+        navbar.style.display = 'none';
+      }
+    });
+
+     document.querySelectorAll('.certificado-click').forEach(img => {
+          img.addEventListener('click', event => {
+            const src = event.currentTarget.getAttribute('data-src');
+            const modalImg = document.getElementById('imagenModal');
+            modalImg.src = src;
+          });
+        });   
+  </script>
 </body>
 </html>
-
-
-<!--
-Mejoras y optimización
-Carga de recursos de forma optimizada:
-
-Mueve los scripts de JavaScript al final del <body> para mejorar la carga inicial del contenido.
-Considera minificar los archivos CSS y JavaScript para reducir el tiempo de carga.
-Estructura semántica:
-
-Usa <section> en lugar de <div class="experience-item"> dentro de #experience, para hacer el código más semántico.
-Agrupa <h1> dentro de un header de cada sección, para una jerarquía clara.
-Uso correcto de atributos en imágenes y iframes:
-
-Evita valores fijos en width y height para mejorar la adaptabilidad en dispositivos móviles.
-Usa loading="lazy" en imágenes para mejorar el rendimiento.
-Usa alt en imágenes y title en iframe para accesibilidad.
-Optimización del menú de navegación:
-
-La barra de navegación tiene un botón para mostrar/ocultar el menú. Si JavaScript está desactivado, el menú no funcionará. Considera usar CSS para el menú responsive.
-Usa aria-label en <nav> y botones para mejorar accesibilidad.
-Separación de estilos y scripts:
-
-Estás llamando a toggleMenu() y setModalImage() directamente en HTML. Es mejor manejar los eventos en un archivo JavaScript separado.
-Corrección en las listas de habilidades:
-
-En la sección "Habilidades Técnicas", la lista tiene "Inglés: Básico A1, Linux" juntos. Separa estos elementos en <li> diferentes.
-SEO y accesibilidad:
-
-Agrega una meta descripción: <meta name="description" content="Portafolio de Fernando González, desarrollador de software y aplicaciones móviles.">
-Usa etiquetas <h2> en secciones en lugar de múltiples <h1>.
--->
